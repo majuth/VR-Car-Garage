@@ -35,7 +35,7 @@ public class SprayCan : MonoBehaviour
      * another particle system that interacts with an object like this.
      * Make sure in the particle system inspector that Collision tab is checked off 
      * And set the "Type" to world so that it can interact with anything with a collider
-     * Also make sure triggers tab is checked. 
+     * Also make sure triggers is checked. 
      */
 
     void OnParticleCollision(GameObject other)
@@ -50,6 +50,7 @@ public class SprayCan : MonoBehaviour
         Material mat = other.GetComponent<Renderer>().material;
 
         int i = 0;
+        float speed = 0.5f;
         //While the particles collide with anything with the tag paintable 
         while (i < numCollisionEvents && other.tag == "Paintable")
         {
@@ -58,7 +59,7 @@ public class SprayCan : MonoBehaviour
                 //Get the intersection of the particles and object 
                 Vector3 pos = collisionEvents[i].intersection;
                 //Change color to spray material 
-                mat.color = sprayMat.color;
+                mat.color = Color.Lerp(mat.color, sprayMat.color,Time.deltaTime * speed); 
                 Debug.Log("thisworks");
             }
             i++;
