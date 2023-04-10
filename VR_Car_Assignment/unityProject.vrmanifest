@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.vrtktesting2.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\user\\Desktop\\VR Car Assignment\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\user\\Desktop\\04-09\\VR_Car_Assignment\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "VRTK Testing2 [Testing]"
