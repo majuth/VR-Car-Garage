@@ -105,6 +105,14 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean SpawnCan
+        {
+            get
+            {
+                return SteamVR_Actions.default_SpawnCan;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get

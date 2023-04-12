@@ -49,7 +49,7 @@ public class Movement : MonoBehaviour
                 Transform arrowTransform = teleportCircle.GetComponent<Transform>();
                 arrowTransform.position = hit.point + new Vector3(0.0f, 0.0f, 0.0f);
                 teleportCircle.SetActive(true);
-                teleportPoint = hit.point + new Vector3(0f, 0.5f, 0f);
+                teleportPoint = hit.point + new Vector3(0f, 0f, 0f);
                 canTeleport = true;
             }
             else
@@ -73,7 +73,7 @@ public class Movement : MonoBehaviour
         {
             Transform cameraTransform = cameraRig.GetComponent<Transform>();
             cameraTransform.position = teleportPoint;
-            print("moved");
+            //print("moved");
             LineRenderer navLine = selectorLine.GetComponent<LineRenderer>();
             navLine.SetPosition(0, transform.position + positionChange);
         }

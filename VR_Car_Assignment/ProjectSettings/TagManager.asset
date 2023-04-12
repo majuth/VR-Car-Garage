@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Paintable
   - 'Interactable '
+  - projectile
+  - FxTemporaire
+  - Left Hand
+  - Right Hand
+  - Tire
   layers:
   - Default
   - TransparentFX
