@@ -11,6 +11,8 @@ TagManager:
   - Left Hand
   - Right Hand
   - Tire
+  - HoodOrn
+  - Ornament
   layers:
   - Default
   - TransparentFX
